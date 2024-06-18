@@ -10,8 +10,10 @@ load_dotenv()
 
 
 # Replace these with your Avaza app details
-client_id = os.getenv('AVAZA_CLIENT_ID')
-client_secret = os.getenv('AVAZA_CLIENT_SECRET')
+# client_id = os.getenv('AVAZA_CLIENT_ID')
+# client_secret = os.getenv('AVAZA_CLIENT_SECRET')
+client_id = st.secrets["avaza"]["AVAZA_CLIENT_ID"]
+client_secret = st.secrets["avaza"]["AVAZA_CLIENT_SECRET"]
 authorization_base_url = 'https://any.avaza.com/oauth2/authorize'
 token_url = 'https://any.avaza.com/oauth2/token'
 redirect_uri = 'http://localhost:8501/'
