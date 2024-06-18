@@ -16,7 +16,7 @@ client_id = st.secrets["avaza"]["AVAZA_CLIENT_ID"]
 client_secret = st.secrets["avaza"]["AVAZA_CLIENT_SECRET"]
 authorization_base_url = 'https://any.avaza.com/oauth2/authorize'
 token_url = 'https://any.avaza.com/oauth2/token'
-redirect_uri = 'http://localhost:8501/'
+redirect_uri = st.secrets["avaza"]["RETURN_URL"]
 
 # Disable the InsecureTransportError for local development
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
