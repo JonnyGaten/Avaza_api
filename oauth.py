@@ -24,7 +24,7 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 # Initialize the OAuth client
 client = WebApplicationClient(client_id)
 
-st.title("Avaza OAuth Authentication")
+st.title("Avaza OAuth Authentication - Google oAuth pending")
 
 # Step 1: User Authorization.
 if 'oauth_token' not in st.session_state:
